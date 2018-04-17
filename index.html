@@ -17,13 +17,21 @@
                     ajax: 'data.json',
                     dataSrc: 'data',
                     pageLength: 5000,
-                    dom: 'pftp'
+                    dom: 'pftp',
                 } );
+                // $.getJSON("data.json", function(data){
+                //     var items = data.data;
+                //     var tblbody = $("#datatable tbody");
+                //     $.each(items, function(key, val){
+                //         // console.log(val);
+                //         $(tblbody).append("<tr><td>" + val.join("</td><td>") + "</td></tr>");
+                //     });
+                // });
             });
         </script>
     </head>
-    <body class="nav-sm">
-        <div class="container body">
+    <body>
+        <div>
             <div class="main_container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -38,7 +46,8 @@
                                         <th>Chromosome</th>
                                         <th>Start</th>
                                         <th>End</th>
-                                        <th>Annotation</th>
+                                        <th>ID</th>
+                                        <th>closesst_NM_TS</th>
                                     </thead>
                                     <tbody>
                                     </tbody>

@@ -6,7 +6,7 @@ Convert bed files to JSON for display with a JQuery Datatable
 """
 import os, sys
 import traceback
-from argparse import ArgumentParser, FileType, RawDescriptionHelpFormatter
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
 import json
 import contextlib
 
@@ -74,7 +74,7 @@ USAGE
                 line = line.strip()
                 if line.startswith("#") or line == "":
                     continue
-                fields = line.split("\t", 3)
+                fields = line.split("\t", 4)
                 data.append(fields)
 
         if DEBUG:
