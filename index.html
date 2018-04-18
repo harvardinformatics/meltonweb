@@ -9,15 +9,44 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap4.min.js"></script>
         <script type="text/javascript">
+            if (!String.prototype.format) {
+              String.prototype.format = function() {
+                var args = arguments;
+                return this.replace(/{(\d+)}/g, function(match, number) {
+                  return typeof args[number] != 'undefined'
+                    ? args[number]
+                    : match
+                  ;
+                });
+              };
+            }
+            var urltemplate = '<a href="http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position={0}:{1}-{2}&hgt.customText=http://meltonlab.rc.fas.harvard.edu/data/UCSC/SCbetaCellDiff_ATAC_H3K4me1_H3K27ac_WGBS_tracks.txt">{3}</a>';
+            // Render the ID column
+            // Inserts spaces around pipes and adds the href property
+            var renderIdCol = function(data, type, row, meta){
+                if (data) {
+                   return urltemplate.format(row[0], row[1], row[2], data.replace(/\|/g, " | "));
+                }
+            }
+            var replacePipes = function(data, type, row, meta){
+                if (data) {
+                    return data.replace(/\|/g, " | ");
+                }
+            }
             $(document).ready(function(){
-                $('#datatable').DataTable( {
-                    ajax: 'data.json',
-                    dataSrc: 'data',
+                $("#datatable").DataTable( {
+                    ajax:       "data.json",
+                    dataSrc:    "data",
                     pageLength: 5000,
-                    dom: 'pftp',
+                    dom:        "pftp",
+                    columns: [
+                        {"title" : "Chromosome"},
+                        {"title" : "Start"},
+                        {"title" : "End"},
+                        {"title" : "ID", "render" : renderIdCol},
+                        {"title" : "closesst_NM_TS", "render" : replacePipes}
+                    ]
                 } );
                 // $.getJSON("data.json", function(data){
                 //     var items = data.data;
