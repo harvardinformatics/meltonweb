@@ -5,6 +5,9 @@ html , body{
 
 }
 
+table tr td {
+    font-size: 12px;
+}
 .full-width {
 
  width:100%;
@@ -426,6 +429,7 @@ pre code {
     }
      .x_title h1 {
         width: 80%;
+        font-size: 20px;
     }
     .tile,
     .graph {
@@ -1429,6 +1433,7 @@ table.display td {
 }
 table.display td.center {
     text-align: center
+    font-size: 10px;
 }
 table.display thead th:active,
 table.display thead td:active {

@@ -14,8 +14,7 @@ track type=bigWig name="S6d7_DA026_PlusPlus_norm" description="S6d7_DA026_PlusPl
 
 track type=bigWig name="mSCB_3866_ATAC_merged_norm" description="mSCB_3866_ATAC_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/mSCB_3866_ATACs_merged_treat_pileup.normalized.bw color=255,200,0 viewLimits=0.2:1 visibility=full autoScale=off maxHeightPixels=40:40:40
 
-track type=bigWig name="HI_PlusMinus_Beta_ATAC_merged_norm" description="HI_PlusMinus_Beta_ATAC_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/HI_PlusMinus_Beta_merged_treat_pileup.normalized.bw color=255,200,0
-viewLimits=0.2:1 visibility=full autoScale=off maxHeightPixels=40:40:40
+track type=bigWig name="HI_PlusMinus_Beta_ATAC_merged_norm" description="HI_PlusMinus_Beta_ATAC_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/HI_PlusMinus_Beta_merged_treat_pileup.normalized.bw color=255,200,0 viewLimits=0.2:1 visibility=full autoScale=off maxHeightPixels=40:40:40
 
 track type=bigWig name="HI_PlusPlus_Alpha_norm" description="HI_PlusPlus_Alpha_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/HI_PlusPlus_Alpha_merged_treat_pileup.normalized.bw color=255,200,0 viewLimits=0.2:1 visibility=full autoScale=off maxHeightPixels=40:40:40
 
@@ -23,8 +22,7 @@ track type=bigWig name="d0_ES_H3K4me1_merged_norm" description="d0_ES_H3K4me1_me
 
 track type=bigWig name="d2_DE_H3K4me1_merged_norm" description="d2_DE_H3K4me1_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/K4me1_ChIPs/ES_D2_H3K4me1_merged_treat_pileup.normalized.bw color=255,150,50 viewLimits=0.05:0.5 visibility=full autoScale=off maxHeightPixels=40:40:40
 
-track type=bigWig name="d5_PGT_H3K4me1_merged_norm" description="d5_PGT_H3K4me1_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/K4me1_ChIPs/ES_D5_H3K4me1_merged_treat_pileup.normalized.bw color=255,150,50
-viewLimits=0.05:0.5 visibility=full autoScale=off maxHeightPixels=40:40:40
+track type=bigWig name="d5_PGT_H3K4me1_merged_norm" description="d5_PGT_H3K4me1_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/K4me1_ChIPs/ES_D5_H3K4me1_merged_treat_pileup.normalized.bw color=255,150,50 viewLimits=0.05:0.5 visibility=full autoScale=off maxHeightPixels=40:40:40
 
 track type=bigWig name="d7_FG_H3K4me1_merged_norm" description="d7_FG_H3K4me1_merged_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/K4me1_ChIPs/ES_D7_H3K4me1_merged_treat_pileup.normalized.bw color=255,150,50 viewLimits=0.05:0.5 visibility=full autoScale=off maxHeightPixels=40:40:40
 
