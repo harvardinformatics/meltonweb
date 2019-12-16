@@ -527,7 +527,7 @@ pre code {
 .navbar-nav>li>a,
 .navbar-brand,
 .navbar-nav>li>a {
-    color: #fff !important
+    color: #000 !important
 }
 .top_nav .nav>li>a:focus,
 .top_nav .nav>li>a:hover,
@@ -542,11 +542,10 @@ body {
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1.471
+    line-height: 1.471;
 }
 .main_container .top_nav {
     display: block;
-    margin-left: 230px
 }
 .no-padding {
     padding: 0 !important
