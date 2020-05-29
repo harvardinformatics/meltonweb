@@ -1,4 +1,4 @@
-track type=bigWig name=H1_Roadmap_ATACs_norm" description="H1_Roadmap_ATACs_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/H1_ATACs_merged.normalized.bw color=255,200,0 viewLimits=0.1:1 visibility=full autoScale=off maxHeightPixels=40:40:40
+track type=bigWig name="H1_Roadmap_ATACs_norm" description="H1_Roadmap_ATACs_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/H1_ATACs_merged.normalized.bw color=255,200,0 viewLimits=0.1:1 visibility=full autoScale=off maxHeightPixels=40:40:40
 
 track type=bigWig name="S1_ATAC_norm" description="S1_ATAC_norm" bigDataUrl=http://lodishlab.wi.mit.edu/juan/beta_cell/ATACs/S1_ATACs_merged.normalized.bw color=255,200,0 viewLimits=0.1:0.5 visibility=full autoScale=off maxHeightPixels=40:40:40
 
